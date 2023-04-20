@@ -31,7 +31,7 @@ public class dependsonmethod {
 	}
 	
 	
-	@Test(dependsOnMethods="ABC_123",alwaysRun=true)
+	@Test(dependsOnMethods="ABC_123")
 	public void display() {
 	System.out.println("i am a automation Engineer");
 	}

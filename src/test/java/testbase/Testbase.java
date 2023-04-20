@@ -18,17 +18,14 @@ public class Testbase {
 	protected LoginpageObjects loginpage;
 	protected Dashboardpageobjects dashboardpage;
 
-
 	public static void initializebrowser(String browseroption) {
 
 		if (browseroption.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\driver\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\driver\\chromedriver.exe");
 
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-		}
-		else if (browseroption.equalsIgnoreCase("firefox")) 
-		{
+		} else if (browseroption.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Users\\josep\\eclipse-workspace\\hrmautomation\\drivers\\firefox\\geckodriver.exe");
 
@@ -42,8 +39,8 @@ public class Testbase {
 	public void setupbrowser() {
 
 		System.out.println("initialize the browser");
-		
-		initializebrowser("firefox");
+
+		initializebrowser("chrome");
 
 		driver.manage().window().maximize();
 

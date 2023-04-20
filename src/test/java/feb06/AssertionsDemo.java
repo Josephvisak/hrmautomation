@@ -18,7 +18,7 @@ public class AssertionsDemo {
 	int a=5;
 	int b=10;
 	
-	Assert.assertTrue(a>b);
+	Assert.assertTrue(a<b);
 	}
 	
 	
